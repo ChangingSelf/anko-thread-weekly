@@ -1,0 +1,107 @@
+{
+    "_id": "nga-thread",
+    "startUrl": [
+        "https://ngabbs.com/thread.php?fid=784&order_by=postdatedesc&page=[1-350]"
+    ],
+    "selectors": [
+        {
+            "id": "thread",
+            "parentSelectors": [
+                "_root"
+            ],
+            "type": "SelectorElement",
+            "selector": "#topicrows tbody",
+            "multiple": true
+        },
+        {
+            "id": "title",
+            "parentSelectors": [
+                "thread"
+            ],
+            "type": "SelectorText",
+            "selector": "a.topic",
+            "multiple": false,
+            "regex": ""
+        },
+        {
+            "id": "publisher_fullname",
+            "parentSelectors": [
+                "thread"
+            ],
+            "type": "SelectorElementAttribute",
+            "selector": "a.author b",
+            "multiple": false,
+            "extractAttribute": "title"
+        },
+        {
+            "id": "level",
+            "parentSelectors": [
+                "thread"
+            ],
+            "type": "SelectorText",
+            "selector": "a.replies",
+            "multiple": false,
+            "regex": ""
+        },
+        {
+            "id": "publish_time",
+            "parentSelectors": [
+                "thread"
+            ],
+            "type": "SelectorElementAttribute",
+            "selector": "span.postdate",
+            "multiple": false,
+            "extractAttribute": "title"
+        },
+        {
+            "id": "reply_time",
+            "parentSelectors": [
+                "thread"
+            ],
+            "type": "SelectorElementAttribute",
+            "selector": "a.replydate",
+            "multiple": false,
+            "extractAttribute": "title"
+        },
+        {
+            "id": "publisher",
+            "parentSelectors": [
+                "thread"
+            ],
+            "type": "SelectorText",
+            "selector": "a.author",
+            "multiple": false,
+            "regex": ""
+        },
+        {
+            "id": "link",
+            "parentSelectors": [
+                "thread"
+            ],
+            "type": "SelectorElementAttribute",
+            "selector": "a.topic",
+            "multiple": false,
+            "extractAttribute": "href"
+        },
+        {
+            "id": "area",
+            "parentSelectors": [
+                "thread"
+            ],
+            "type": "SelectorText",
+            "selector": ".titleadd2 a",
+            "multiple": false,
+            "regex": ""
+        },
+        {
+            "id": "uid",
+            "parentSelectors": [
+                "thread"
+            ],
+            "type": "SelectorElementAttribute",
+            "selector": "a.author",
+            "multiple": false,
+            "extractAttribute": "title"
+        }
+    ]
+}
