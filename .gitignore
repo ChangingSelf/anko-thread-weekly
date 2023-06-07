@@ -1,3 +1,6 @@
 data/
 raw_data/
 *.xlsx
+stopwords.txt
+test.png
+cut.txt
